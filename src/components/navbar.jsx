@@ -9,8 +9,21 @@ import {
   MenuOutlined,
 } from "@ant-design/icons";
 
+import icon from "../images/logo.png";
+
 const navbar = () => {
-  return <div>navbar</div>;
+  return (
+    <div className="nav-container">
+      <div className="logo-container">
+        <Avatar src={icon} size="large" />
+        <Typography.Title level={2} className="logo" />
+        <Link to="/">Cryptocurrency Tracker</Link>
+        {/* <Button className="menu-control-container">
+
+          </Button> */}
+      </div>
+    </div>
+  );
 };
 
 export default navbar;
