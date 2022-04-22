@@ -3,8 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@reduxjs/toolkit": "^1.8.1",
+    "antd": "^4.19.5",
+    "axios": "^0.26.1",
+    "chart.js": "^3.7.1",
+    "html-react-parser": "^1.4.11",
+    "millify": "^4.0.0",
+    "moment": "^2.29.3",
     "react": "^16.8.6",
+    "react-chartjs-2": "^4.1.0",
     "react-dom": "^16.8.6",
+    "react-redux": "^8.0.1",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "2.1.8"
   },
   "scripts": {
