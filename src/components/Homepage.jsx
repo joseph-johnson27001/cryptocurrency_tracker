@@ -1,7 +1,7 @@
 import React from "react";
 import millify from "millify";
 import { Typography, Row, Col, Statistic } from "antd";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import { useGetCryptosQuery } from "../services/cryptoApi";
 
@@ -28,10 +28,26 @@ const Homepage = () => {
             value={globalStats.total}
             span={12}
           />
-          <Statistic title="Total Exchanges" value="5" span={12} />
-          <Statistic title="Total Market Cap" value="5" span={12} />
-          <Statistic title="Total 24h Volume" value="5" span={12} />
-          <Statistic title="Total Markets" value="5" span={12} />
+          <Statistic
+            title="Total Exchanges"
+            value={millify(globalStats.totalExchanges)}
+            span={12}
+          />
+          <Statistic
+            title="Total Market Cap"
+            value={millify(globalStats.totalMarketCap)}
+            span={12}
+          />
+          <Statistic
+            title="Total 24h Volume"
+            value={millify(globalStats.total24hVolume)}
+            span={12}
+          />
+          <Statistic
+            title="Total Markets"
+            value={millify(globalStats.totalMarkets)}
+            span={12}
+          />
         </Col>
       </Row>
     </>
