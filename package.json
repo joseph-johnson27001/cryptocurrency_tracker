@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.16.7",
     "@reduxjs/toolkit": "^1.8.1",
     "antd": "^4.19.5",
     "axios": "^0.26.1",
@@ -11,12 +12,13 @@
     "html-react-parser": "^1.4.11",
     "millify": "^4.0.0",
     "moment": "^2.29.3",
-    "react": "^16.8.6",
+    "react": "^16.14.0",
     "react-chartjs-2": "^4.1.0",
     "react-dom": "^16.8.6",
     "react-redux": "^8.0.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "2.1.8"
+    "react-scripts": "5.0.1",
+    "scripts": "^0.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
