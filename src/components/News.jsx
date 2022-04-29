@@ -51,10 +51,10 @@ const News = ({ simplified }) => {
                   <Text className="provider-name">
                     {news.provider[0]?.name}
                   </Text>
-                  <Text>
-                    {moment(news.datePublished).startOf("ss").fromNow()}
-                  </Text>
                 </div>
+                <Text>
+                  {moment(news.datePublished).startOf("ss").fromNow()}
+                </Text>
               </div>
             </a>
           </Card>
