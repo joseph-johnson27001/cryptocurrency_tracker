@@ -29,9 +29,32 @@ const News = ({ simplified }) => {
                   {news.name}
                 </Title>
                 <img
+                  style={{ maxWidth: "100px", maxHeight: "100px" }}
                   src={news?.image?.thumbnail?.contentUrl || demoImage}
                   alt="news"
                 />
+              </div>
+              <p>
+                {news.description > 100
+                  ? `${news.description.substring(0, 100)}...`
+                  : news.description}
+              </p>
+              <div className="provider-container">
+                <div>
+                  <Avatar
+                    src={
+                      news.provider[0]?.image?.thumbnail?.contentUrl ||
+                      demoImage
+                    }
+                    alt="news"
+                  />
+                  <Text className="provider-name">
+                    {news.provider[0]?.name}
+                  </Text>
+                  <Text>
+                    {moment(news.datePublished).startOf("ss").fromNow()}
+                  </Text>
+                </div>
               </div>
             </a>
           </Card>
