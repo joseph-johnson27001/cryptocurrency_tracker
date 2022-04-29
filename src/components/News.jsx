@@ -7,10 +7,13 @@ import { useGetCryptoNewsQuery } from "../services/cryptoNewsApi";
 const { Text, Title } = Typography;
 const { option } = Select;
 
+const demoImage =
+  "http://coinrevolution.com/wp-content/uploads/2020/06/cryptonews.jpg";
+
 const News = ({ simplified }) => {
   const { data: cryptoNews } = useGetCryptoNewsQuery({
     newsCategory: "Cryptocurrency",
-    count: simplified ? 10 : 100,
+    count: simplified ? 6 : 12,
   });
 
   if (!cryptoNews?.value) return "Loading...";
@@ -25,6 +28,10 @@ const News = ({ simplified }) => {
                 <Title className="news-title" level={4}>
                   {news.name}
                 </Title>
+                <img
+                  src={news?.image?.thumbnail?.contentUrl || demoImage}
+                  alt="news"
+                />
               </div>
             </a>
           </Card>
