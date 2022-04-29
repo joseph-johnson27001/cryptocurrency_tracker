@@ -6,7 +6,6 @@ const cryptoApiHeaders = {
 };
 
 const baseUrl = "https://coinranking1.p.rapidapi.com/";
-// const baseUrl = "https://coinranking1.p.rapidapi.com/coins"; Try this one if doesnt work (dif on yt video)
 
 const createRequest = (url) => ({ url, headers: cryptoApiHeaders });
 
