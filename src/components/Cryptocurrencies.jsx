@@ -21,6 +21,8 @@ const Cryptocurrencies = ({ simplified }) => {
 
   if (isFetching) return "Loading...";
 
+  console.log(cryptos);
+
   return (
     <>
       {!simplified && (
@@ -33,8 +35,14 @@ const Cryptocurrencies = ({ simplified }) => {
       )}
       <Row gutter={[32, 32]} className="crypto-card-container">
         {cryptos?.map((currency) => (
-          <Col xs={24} sm={12} lg={6} className="crypto-card" key={currency.id}>
-            <Link to={`/crypto/${currency.id}`}>
+          <Col
+            xs={24}
+            sm={12}
+            lg={6}
+            className="crypto-card"
+            key={currency.rank}
+          >
+            <Link to={`/crypto/${currency.rank}`}>
               <Card
                 title={`${currency.rank}. ${currency.name}`}
                 extra={<img className="crypto-image" src={currency.iconUrl} />}

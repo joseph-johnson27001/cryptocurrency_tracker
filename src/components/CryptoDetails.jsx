@@ -19,8 +19,8 @@ const { Title, Text } = Typography;
 const { Option } = Select;
 
 const CryptoDetails = () => {
-  const { coinId } = useParams();
-  return <div>CryptoDetails {coinId} </div>;
+  const { rank } = useParams();
+  return <div>CryptoDetails {rank} </div>;
 };
 
 export default CryptoDetails;
