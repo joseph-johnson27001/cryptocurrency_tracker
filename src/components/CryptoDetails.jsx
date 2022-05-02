@@ -59,45 +59,45 @@ const CryptoDetails = () => {
 
   console.log("stats", stats);
 
-  // const genericStats = [
-  //   {
-  //     title: "Number Of Markets",
-  //     value: cryptoDetails.numberOfMarkets,
-  //     icon: <FundOutlined />,
-  //   },
-  //   {
-  //     title: "Number Of Exchanges",
-  //     value: cryptoDetails.numberOfExchanges,
-  //     icon: <MoneyCollectOutlined />,
-  //   },
-  //   {
-  //     title: "Aprroved Supply",
-  //     value: cryptoDetails.approvedSupply ? (
-  //       <CheckOutlined />
-  //     ) : (
-  //       <StopOutlined />
-  //     ),
-  //     icon: <ExclamationCircleOutlined />,
-  //   },
-  //   {
-  //     title: "Total Supply",
-  //     value: `$ ${millify(cryptoDetails.totalSupply)}`,
-  //     icon: <ExclamationCircleOutlined />,
-  //   },
-  //   {
-  //     title: "Circulating Supply",
-  //     value: `$ ${millify(cryptoDetails.circulatingSupply)}`,
-  //     icon: <ExclamationCircleOutlined />,
-  //   },
-  // ];
+  const genericStats = [
+    {
+      title: "Number Of Markets",
+      value: cryptoDetails.numberOfMarkets,
+      icon: <FundOutlined />,
+    },
+    {
+      title: "Number Of Exchanges",
+      value: cryptoDetails.numberOfExchanges,
+      icon: <MoneyCollectOutlined />,
+    },
+    {
+      title: "Aprroved Supply",
+      value: cryptoDetails.approvedSupply ? (
+        <CheckOutlined />
+      ) : (
+        <StopOutlined />
+      ),
+      icon: <ExclamationCircleOutlined />,
+    },
+    // {
+    //   title: "Total Supply",
+    //   value: `$ ${millify(cryptoDetails.totalSupply)}`,
+    //   icon: <ExclamationCircleOutlined />,
+    // },
+    // {
+    //   title: "Circulating Supply",
+    //   value: `$ ${millify(cryptoDetails.circulatingSupply)}`,
+    //   icon: <ExclamationCircleOutlined />,
+    // },
+  ];
 
-  // console.log("genericStats", genericStats);
+  console.log("genericStats", genericStats);
 
   return (
     <Col className="coin-detail-container">
       <Col className="coin-heading-container">
         <Title level={2} className="coin-name">
-          {cryptoDetails.name} ({cryptoDetails.slug}) Price
+          {cryptoDetails.name} ({cryptoDetails.symbol}) Price
         </Title>
         <p>
           {cryptoDetails.name} live price in US dollars. View value statistics,
@@ -133,6 +133,24 @@ const CryptoDetails = () => {
             </Col>
           ))}
         </Col>
+      </Col>
+      {/* GENERIC STATS AREA */}
+      <Col className="other-stats-info">
+        <Col className="coin-value-statistics-heading">
+          <Title level={3} className="coin-details-heading">
+            {cryptoDetails.name} Generic Statistics
+          </Title>
+          <p>An overview showing the stats of {cryptoDetails.name}</p>
+        </Col>
+        {genericStats.map(({ icon, title, value }) => (
+          <Col className="coin-stats">
+            <Col className="coin-stats-name">
+              <Text>{icon}</Text>
+              <Text>{title}</Text>
+            </Col>
+            <Text className="stats">{value}</Text>
+          </Col>
+        ))}
       </Col>
     </Col>
   );
