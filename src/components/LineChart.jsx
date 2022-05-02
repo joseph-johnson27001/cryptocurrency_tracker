@@ -10,6 +10,7 @@ import {
   Filler,
   TimeScale,
 } from "chart.js";
+import moment from "moment";
 
 import "chartjs-adapter-moment";
 
@@ -34,7 +35,7 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
 
   for (let i = 0; i < coinHistory?.data?.history?.length; i += 1) {
     coinTimestamp.push(
-      new Date(coinHistory?.data?.history[i].timestamp).toLocaleDateString()
+      moment(new Date(coinHistory?.data?.history[i].timestamp))
     );
   }
 
