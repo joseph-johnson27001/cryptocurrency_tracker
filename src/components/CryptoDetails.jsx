@@ -95,7 +95,7 @@ const CryptoDetails = () => {
   return (
     <Col className="coin-detail-container">
       <Col className="coin-heading-container">
-        <Title level="2" className="coin-name">
+        <Title level={2} className="coin-name">
           {cryptoDetails.name} ({cryptoDetails.slug}) Price
         </Title>
         <p>
@@ -114,6 +114,16 @@ const CryptoDetails = () => {
         ))}
       </Select>
       {/* { LINE CHART AREA } */}
+      <Col className="stats-container">
+        <Col className="coin-value-statistics">
+          <Col className="coin-value-statistics-heading">
+            <Title level={3} className="coin-details-heading">
+              {cryptoDetails.name} Value Statistics
+            </Title>
+            <p>An overview showing the stats of {cryptoDetails.name}</p>
+          </Col>
+        </Col>
+      </Col>
     </Col>
   );
 };
