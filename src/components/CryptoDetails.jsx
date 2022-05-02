@@ -21,9 +21,10 @@ const { Title, Text } = Typography;
 const { Option } = Select;
 
 const CryptoDetails = () => {
+  const { uuid } = useParams();
   const { rank } = useParams();
   const [timePeriod, setTimePeriod] = useState("7d");
-  const { data, isFetching } = useGetCryptoDetailsQuery(rank);
+  const { data, isFetching } = useGetCryptoDetailsQuery(uuid);
 
   console.log(data);
 
