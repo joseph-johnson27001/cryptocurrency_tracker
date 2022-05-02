@@ -72,23 +72,23 @@ const CryptoDetails = () => {
     },
     {
       title: "Aprroved Supply",
-      value: cryptoDetails.approvedSupply ? (
+      value: cryptoDetails.supply.confirmed ? (
         <CheckOutlined />
       ) : (
         <StopOutlined />
       ),
       icon: <ExclamationCircleOutlined />,
     },
-    // {
-    //   title: "Total Supply",
-    //   value: `$ ${millify(cryptoDetails.totalSupply)}`,
-    //   icon: <ExclamationCircleOutlined />,
-    // },
-    // {
-    //   title: "Circulating Supply",
-    //   value: `$ ${millify(cryptoDetails.circulatingSupply)}`,
-    //   icon: <ExclamationCircleOutlined />,
-    // },
+    {
+      title: "Total Supply",
+      value: `$ ${millify(cryptoDetails.supply.total)}`,
+      icon: <ExclamationCircleOutlined />,
+    },
+    {
+      title: "Circulating Supply",
+      value: `$ ${millify(cryptoDetails.supply.circulating)}`,
+      icon: <ExclamationCircleOutlined />,
+    },
   ];
 
   console.log("genericStats", genericStats);
