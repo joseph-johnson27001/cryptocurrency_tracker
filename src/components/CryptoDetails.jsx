@@ -40,11 +40,13 @@ const CryptoDetails = () => {
     },
     { title: "Rank", value: cryptoDetails.rank, icon: <NumberOutlined /> },
     // BELOW: CRYPTO 24 H Volume failine to load (need to use 24hVolume but creates super fun error)
-    // {
-    //   title: "24h Volume",
-    //   value: `$ ${cryptoDetails.volume && millify(cryptoDetails.volume)}`,
-    //   icon: <ThunderboltOutlined />,
-    // },
+    {
+      title: "24h Volume",
+      value: `$ ${
+        cryptoDetails["24hVolume"] && millify(cryptoDetails["24hVolume"])
+      }`,
+      icon: <ThunderboltOutlined />,
+    },
     {
       title: "Market Cap",
       value: `$ ${cryptoDetails.marketCap && millify(cryptoDetails.marketCap)}`,
