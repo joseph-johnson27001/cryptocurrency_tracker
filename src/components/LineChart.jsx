@@ -61,12 +61,15 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
       },
       xAxes: {
         type: "time",
-        time: {
-          unit: "day",
-          displayFormats: {
-            day: "DD MM YYYY",
-          },
-        },
+        // ticks: {
+        //   beginAtZero: true,
+        // },
+        // time: {
+        //   unit: "day",
+        //   displayFormats: {
+        //     day: "DD MM YYYY",
+        //   },
+        // },
       },
     },
   };
