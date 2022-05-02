@@ -15,11 +15,18 @@ import {
   ThunderboltOutlined,
 } from "@ant-design/icons";
 
+import { useGetCryptoDetailsQuery } from "../services/cryptoApi";
+
 const { Title, Text } = Typography;
 const { Option } = Select;
 
 const CryptoDetails = () => {
   const { rank } = useParams();
+  const [timePeriod, setTimePeriod] = useState("7d");
+  const { data, isFetching } = useGetCryptoDetailsQuery(rank);
+
+  console.log(data);
+
   return <div>CryptoDetails {rank} </div>;
 };
 
