@@ -26,9 +26,9 @@ const { Option } = Select;
 
 const CryptoDetails = () => {
   const { uuid } = useParams();
-  const [timePeriod, setTimePeriod] = useState("7d");
+  const [timeperiod, setTimePeriod] = useState("7d");
   const { data, isFetching } = useGetCryptoDetailsQuery(uuid);
-  const { data: coinHistory } = useGetCryptoHistoryQuery({ uuid, timePeriod });
+  const { data: coinHistory } = useGetCryptoHistoryQuery({ uuid, timeperiod });
   const cryptoDetails = data?.data?.coin;
 
   if (isFetching) return "Loading...";
@@ -92,8 +92,6 @@ const CryptoDetails = () => {
       icon: <ExclamationCircleOutlined />,
     },
   ];
-
-  console.log("genericStats", genericStats);
 
   return (
     <Col className="coin-detail-container">
