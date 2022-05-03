@@ -130,7 +130,7 @@ const CryptoDetails = () => {
             <p>An Overview of {cryptoDetails.name}'s Valuation Statistics</p>
           </Col>
           {stats.map(({ icon, title, value }) => (
-            <Col className="coin-stats">
+            <Col className="coin-stats" key={value}>
               <Col className="coin-stats-name">
                 <Text>{icon}</Text>
                 <Text>{title}</Text>
@@ -149,7 +149,7 @@ const CryptoDetails = () => {
             <p>Generic {cryptoDetails.name} Statistics</p>
           </Col>
           {genericStats.map(({ icon, title, value }) => (
-            <Col className="coin-stats">
+            <Col className="coin-stats" key={value}>
               <Col className="coin-stats-name">
                 <Text>{icon}</Text>
                 <Text>{title}</Text>
@@ -170,15 +170,17 @@ const CryptoDetails = () => {
           <Title level={3} className="coin-details-heading">
             {cryptoDetails.name} Links
           </Title>
-          {cryptoDetails.links.map((link) => (
-            <Row className="coin-link" key={link.listedAt}>
-              <Title level={5} className="link-name">
-                {link.type}
-              </Title>
-              <a href={link.url} target="_blank" rel="noreferrer">
-                {link.name}
-              </a>
-            </Row>
+          {cryptoDetails.links.map((link, i) => (
+            <div key={i}>
+              <Row className="coin-link">
+                <Title level={5} className="link-name">
+                  {link.type}
+                </Title>
+                <a href={link.url} target="_blank" rel="noreferrer">
+                  {link.name}
+                </a>
+              </Row>
+            </div>
           ))}
         </Col>
       </Col>
