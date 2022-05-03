@@ -41,7 +41,7 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
     labels: coinTimestamp,
     datasets: [
       {
-        label: "Price In USD",
+        label: "Price In USD $",
         data: coinPrice,
         fill: false,
         backgroundColor: "#0071bd",
@@ -56,6 +56,7 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
         ticks: {
           beginAtZero: true,
         },
+        labels: "$",
       },
       xAxes: {
         type: "time",
