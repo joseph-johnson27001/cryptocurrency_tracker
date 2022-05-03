@@ -34,9 +34,6 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
   }
 
   for (let i = 0; i < coinHistory?.data?.history?.length; i += 1) {
-    console.log(
-      Moment.unix(coinHistory?.data?.history[i].timestamp).format("DD-MM-YYYY")
-    );
     coinTimestamp.push(Moment.unix(coinHistory?.data?.history[i].timestamp));
   }
 
