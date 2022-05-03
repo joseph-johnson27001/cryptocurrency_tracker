@@ -63,12 +63,6 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
         ticks: {
           beginAtZero: true,
         },
-        // time: {
-        //   unit: "day",
-        //   displayFormats: {
-        //     day: "DD MM YYYY",
-        //   },
-        // },
       },
     },
   };
