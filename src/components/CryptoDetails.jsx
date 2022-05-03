@@ -26,10 +26,12 @@ const { Option } = Select;
 
 const CryptoDetails = () => {
   const { uuid } = useParams();
-  const [timePeriod, setTimePeriod] = useState("7d");
+  const [timePeriod, setTimePeriod] = useState("24h");
   const { data, isFetching } = useGetCryptoDetailsQuery(uuid);
   const { data: coinHistory } = useGetCryptoHistoryQuery({ uuid, timePeriod });
   const cryptoDetails = data?.data?.coin;
+
+  console.log("CRYPTO DETAILS", cryptoDetails);
 
   if (isFetching) return "Loading...";
 
@@ -83,7 +85,9 @@ const CryptoDetails = () => {
     },
     {
       title: "Total Supply",
-      value: `$ ${millify(cryptoDetails.supply.total)}`,
+      value: `$ ${
+        cryptoDetails?.supply?.total && millify(cryptoDetails?.supply?.total)
+      }`,
       icon: <ExclamationCircleOutlined />,
     },
     {
@@ -94,6 +98,7 @@ const CryptoDetails = () => {
   ];
 
   console.log("CRYPTO DETAILS", cryptoDetails);
+  console.log("GENERIC DETAILS", genericStats);
 
   return (
     <Col className="coin-detail-container">
@@ -148,8 +153,8 @@ const CryptoDetails = () => {
             </Title>
             <p>Generic {cryptoDetails.name} Statistics</p>
           </Col>
-          {genericStats.map(({ icon, title, value }) => (
-            <Col className="coin-stats" key={value}>
+          {genericStats.map(({ icon, title, value, index }) => (
+            <Col className="coin-stats" key={value[index]}>
               <Col className="coin-stats-name">
                 <Text>{icon}</Text>
                 <Text>{title}</Text>
