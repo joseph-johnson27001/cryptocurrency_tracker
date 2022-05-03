@@ -143,7 +143,6 @@ const CryptoDetails = () => {
               <Text className="stats">{value}</Text>
             </Col>
           ))}
-          {/* </Col> */}
         </Col>
         {/* GENERIC STATS AREA */}
         <Col className="other-stats-info">
