@@ -10,7 +10,7 @@ import {
   Filler,
   TimeScale,
 } from "chart.js";
-import moment from "moment";
+import Moment from "moment";
 
 import "chartjs-adapter-moment";
 
@@ -29,14 +29,15 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
   const coinPrice = [];
   const coinTimestamp = [];
 
+  const dateToFormat = "1976-04-19T12:59-0500";
+
   for (let i = 0; i < coinHistory?.data?.history?.length; i += 1) {
     coinPrice.push(coinHistory?.data?.history[i].price);
   }
 
   for (let i = 0; i < coinHistory?.data?.history?.length; i += 1) {
-    coinTimestamp.push(
-      moment(new Date(coinHistory?.data?.history[i].timestamp))
-    );
+    console.log(Moment.unix(coinHistory?.data?.history[i].timestamp));
+    coinTimestamp.push(Moment.unix(coinHistory?.data?.history[i].timestamp));
   }
 
   const data = {
@@ -61,9 +62,9 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
       },
       xAxes: {
         type: "time",
-        // ticks: {
-        //   beginAtZero: true,
-        // },
+        ticks: {
+          beginAtZero: true,
+        },
         // time: {
         //   unit: "day",
         //   displayFormats: {
