@@ -93,6 +93,8 @@ const CryptoDetails = () => {
     },
   ];
 
+  console.log("CRYPTO DETAILS", cryptoDetails);
+
   return (
     <Col className="coin-detail-container">
       <Col className="coin-heading-container">
@@ -169,7 +171,7 @@ const CryptoDetails = () => {
             {cryptoDetails.name} Links
           </Title>
           {cryptoDetails.links.map((link) => (
-            <Row className="coin-link" key={link.name}>
+            <Row className="coin-link" key={link.listedAt}>
               <Title level={5} className="link-name">
                 {link.type}
               </Title>
