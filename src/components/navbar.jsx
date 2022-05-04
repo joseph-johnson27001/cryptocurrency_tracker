@@ -37,7 +37,7 @@ const Navbar = () => {
     <div className="nav-container">
       <div className="logo-container">
         <Avatar src={icon} size="large" />
-        <Typography.Title level={2} className="logo">
+        <Typography.Title level={3} className="logo">
           <Link to="/">Cryptoverse</Link>
         </Typography.Title>
         <Button
@@ -48,7 +48,7 @@ const Navbar = () => {
         </Button>
       </div>
       {activeMenu && (
-        <Menu theme="dark">
+        <Menu theme="dark" style={{ background: "black" }}>
           <Menu.Item icon={<HomeOutlined />} key="home">
             <Link to="/">Home</Link>
           </Menu.Item>
