@@ -97,9 +97,6 @@ const CryptoDetails = () => {
     },
   ];
 
-  console.log("CRYPTO DETAILS", cryptoDetails);
-  console.log("GENERIC DETAILS", genericStats);
-
   return (
     <Col className="coin-detail-container">
       <Col className="coin-heading-container">
