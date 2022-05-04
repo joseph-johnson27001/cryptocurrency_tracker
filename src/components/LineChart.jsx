@@ -56,7 +56,10 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
         ticks: {
           beginAtZero: true,
         },
-        labels: "$",
+        title: {
+          display: true,
+          text: `${coinName} Price in USD ($)`,
+        },
       },
       xAxes: {
         type: "time",
