@@ -241,6 +241,10 @@ a:hover{
     flex: 0.5;
 }
 
+.coin-desc p{
+    text-align: justify
+}
+
 .coin-links{
   padding: 0px 20px;
     flex: 0.5;
