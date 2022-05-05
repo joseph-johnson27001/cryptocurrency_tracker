@@ -192,6 +192,10 @@ a:hover{
     font-size: 1rem;
 }
 
+.coin-stats-icon {
+    margin-top: 5px;
+}
+
 .stats{
     font-weight: 800;
 }
