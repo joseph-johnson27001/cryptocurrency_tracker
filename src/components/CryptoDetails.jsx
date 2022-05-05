@@ -123,7 +123,7 @@ const CryptoDetails = () => {
         currentPrice={millify(cryptoDetails.price)}
         coinName={cryptoDetails.name}
       />
-      <Col className="stats-container">
+      <Col className="coin-desc-link">
         <Col className="coin-value-statistics">
           <Col className="coin-value-statistics-heading">
             <Title level={3} className="coin-details-heading">
