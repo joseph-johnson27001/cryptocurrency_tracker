@@ -132,7 +132,7 @@ const CryptoDetails = () => {
             <Title level={3} className="coin-details-heading">
               {cryptoDetails.name} Value Stats
             </Title>
-            <p>An Overview of {cryptoDetails.name}'s Valuation Statistics</p>
+            An Overview of {cryptoDetails.name}'s Valuation Statistics
           </Col>
           {stats.map(({ icon, title, value }) => (
             <Col className="coin-stats" key={title.toString()}>
