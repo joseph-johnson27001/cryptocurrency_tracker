@@ -81,15 +81,9 @@ a:hover{
     background-color: #000;
 }
 
-@media screen and (max-width:1170px){
-    .main{
-        margin-left: 50px;
-    }
-}
-
 @media screen and (max-width:1000px){
     .main{
-        margin-left: 100px;
+        margin-left: 50px;
     }
 }
 
