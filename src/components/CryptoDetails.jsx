@@ -134,8 +134,8 @@ const CryptoDetails = () => {
             </Title>
             <p>An Overview of {cryptoDetails.name}'s Valuation Statistics</p>
           </Col>
-          {stats.map(({ icon, title, value, index }) => (
-            <Col className="coin-stats" key={index}>
+          {stats.map(({ icon, title, value }) => (
+            <Col className="coin-stats" key={title.toString()}>
               <Col className="coin-stats-name">
                 <Text className="coin-stats-icon">{icon}</Text>
                 <Text>{title}</Text>
@@ -153,7 +153,7 @@ const CryptoDetails = () => {
             Generic {cryptoDetails.name} Statistics
           </Col>
           {genericStats.map(({ icon, title, value, index }) => (
-            <Col className="coin-stats" key={value[index]}>
+            <Col className="coin-stats" key={title.toString()}>
               <Col className="coin-stats-name">
                 <Text className="coin-stats-icon">{icon}</Text>
                 <Text>{title}</Text>
