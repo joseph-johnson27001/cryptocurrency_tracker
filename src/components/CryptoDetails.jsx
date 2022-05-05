@@ -31,8 +31,6 @@ const CryptoDetails = () => {
   const { data: coinHistory } = useGetCryptoHistoryQuery({ uuid, timePeriod });
   const cryptoDetails = data?.data?.coin;
 
-  console.log("CRYPTO DETAILS", cryptoDetails);
-
   if (isFetching) return "Loading...";
 
   const time = ["3h", "24h", "7d", "30d", "3m", "1y", "3y", "5y"];
@@ -136,8 +134,8 @@ const CryptoDetails = () => {
             </Title>
             <p>An Overview of {cryptoDetails.name}'s Valuation Statistics</p>
           </Col>
-          {stats.map(({ icon, title, value }) => (
-            <Col className="coin-stats" key={value}>
+          {stats.map(({ icon, title, value, index }) => (
+            <Col className="coin-stats" key={index}>
               <Col className="coin-stats-name">
                 <Text className="coin-stats-icon">{icon}</Text>
                 <Text>{title}</Text>
@@ -152,7 +150,7 @@ const CryptoDetails = () => {
             <Title level={3} className="coin-details-heading">
               Generic {cryptoDetails.name} Information
             </Title>
-            <p>Generic {cryptoDetails.name} Statistics</p>
+            Generic {cryptoDetails.name} Statistics
           </Col>
           {genericStats.map(({ icon, title, value, index }) => (
             <Col className="coin-stats" key={value[index]}>
@@ -171,7 +169,7 @@ const CryptoDetails = () => {
             <Title level={3} className="coin-details-heading">
               What is {cryptoDetails.name}?
             </Title>
-            <p>{HTMLReactParser(cryptoDetails.description)}</p>
+            {HTMLReactParser(cryptoDetails.description)}
           </Col>
         </Row>
         <Col className="coin-links">
