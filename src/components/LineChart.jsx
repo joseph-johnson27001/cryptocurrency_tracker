@@ -94,7 +94,12 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
             </div>
           </Title>
           <Title level={5} className="current-price">
-            Current {coinName} Price: $ {currentPrice}
+            <div>
+              Current {coinName} Price:{" "}
+              <p style={{ color: "#0071bd", display: "inline" }}>
+                ${currentPrice}
+              </p>
+            </div>
           </Title>
         </Col>
       </Row>
