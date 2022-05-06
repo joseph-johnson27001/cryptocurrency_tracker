@@ -28,12 +28,16 @@ a:hover{
     background-color: #000;
 }
 
+.navbar .navbar-heading {
+    font-family: 'Share Tech', sans-serif;
+}
+
 .main{
     flex: 0.8;
     width: 100%;
     overflow-x: auto;
 }
-#heading {
+.navbar-heading {
     font-weight: 300;
 }
 .routes{
@@ -68,6 +72,14 @@ a:hover{
     font-size: 1.2rem !important;
     background-color: #fff !important;
     border: #fff !important;
+}
+
+.heading {
+    font-family: 'Share Tech', sans-serif;
+}
+
+.home-title {
+    font-family: 'Share Tech', sans-serif;
 }
 
 .loader{
