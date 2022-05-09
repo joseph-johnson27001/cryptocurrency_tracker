@@ -94,6 +94,10 @@ a:hover{
     background-color: #000;
 }
 
+.global-crypto-container {
+    display: flex;
+}
+
 @media screen and (max-width:1000px){
     .main{
         margin-left: 50px;
@@ -140,6 +144,9 @@ a:hover{
     }
     .show-more{
         font-size: 1.3rem !important;
+    }
+    .global-crypto-container {
+        display: block;
     }
 }
 
