@@ -9,8 +9,6 @@ import {
   MenuOutlined,
 } from "@ant-design/icons";
 
-import icon from "../images/logo.png";
-
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(true);
   const [screenSize, setScreenSize] = useState(undefined);
@@ -36,41 +34,31 @@ const Navbar = () => {
   return (
     <div className="nav-container">
       <div className="logo-container">
-        <Avatar src={icon} size="large" />
-        <Typography.Title level={3} className="logo">
+        <Typography.Title level={2} className="logo">
           <Link to="/" class="navbar-heading">
             Cloud Crypto
           </Link>
         </Typography.Title>
-        {/* <Button
+        <Button
           className="menu-control-container"
           onClick={() => setActiveMenu(!activeMenu)}
         >
           <MenuOutlined />
-        </Button> */}
-
-        <Menu
-          theme="dark"
-          mode="horizontal"
-          style={{ background: "black" }}
-          display="inline"
-          className="menu-items-container"
-        >
-          <Menu.Item icon={<HomeOutlined />} key="home" className="menu-item">
+        </Button>
+      </div>
+      {activeMenu && (
+        <Menu theme="dark" style={{ background: "black" }}>
+          <Menu.Item icon={<HomeOutlined />} key="home">
             <Link to="/">Home</Link>
           </Menu.Item>
-          <Menu.Item
-            icon={<FundOutlined />}
-            key="cryptocurrencies"
-            className="menu-item"
-          >
+          <Menu.Item icon={<FundOutlined />} key="cryptocurrencies">
             <Link to="/cryptocurrencies">Cryptocurrencies</Link>
           </Menu.Item>
-          <Menu.Item icon={<BulbOutlined />} key="news" className="menu-item">
+          <Menu.Item icon={<BulbOutlined />} key="news">
             <Link to="/news">News</Link>
           </Menu.Item>
         </Menu>
-      </div>
+      )}
     </div>
   );
 };
