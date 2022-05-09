@@ -20,28 +20,36 @@ const Homepage = () => {
       <Title level={2} className="heading">
         Global Crypto Stats
       </Title>
-      <Row>
-        <Col span={12}>
+      <Row gutter={16}>
+        <Col span={4}>
           <Statistic
             title="Total Cryptocurrencies"
             value={globalStats.total}
             span={12}
           />
+        </Col>
+        <Col span={4}>
           <Statistic
             title="Total Exchanges"
             value={millify(globalStats.totalExchanges)}
             span={12}
           />
+        </Col>
+        <Col span={4}>
           <Statistic
             title="Total Market Cap"
             value={millify(globalStats.totalMarketCap)}
             span={12}
           />
+        </Col>
+        <Col span={4}>
           <Statistic
             title="Total 24h Volume"
             value={millify(globalStats.total24hVolume)}
             span={12}
           />
+        </Col>
+        <Col span={4}>
           <Statistic
             title="Total Markets"
             value={millify(globalStats.totalMarkets)}
