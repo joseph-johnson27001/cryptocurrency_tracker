@@ -35,7 +35,7 @@ const Navbar = () => {
     <div className="nav-container">
       <div className="logo-container">
         <Typography.Title level={2} className="logo">
-          <Link to="/" class="navbar-heading">
+          <Link to="/" className="navbar-heading">
             Cloud Crypto
           </Link>
         </Typography.Title>

@@ -98,6 +98,10 @@ a:hover{
     display: flex;
 }
 
+.show-more{
+    font-size: 1.1rem !important;
+}
+
 @media screen and (max-width:1000px){
     .main{
         margin-left: 50px;
@@ -141,9 +145,6 @@ a:hover{
     }
     .home-title{
         font-size: 1.4rem !important;
-    }
-    .show-more{
-        font-size: 1.3rem !important;
     }
     .global-crypto-container {
         display: block;
