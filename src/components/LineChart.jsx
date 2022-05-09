@@ -83,7 +83,9 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
               <p
                 style={{
                   color:
-                    coinHistory?.data?.change[0] === "-" ? "#F93154" : "green",
+                    Math.sign(coinHistory?.data?.change) === -1
+                      ? "#F93154"
+                      : "green",
                   display: "inline",
                 }}
               >

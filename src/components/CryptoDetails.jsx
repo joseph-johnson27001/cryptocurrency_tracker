@@ -100,6 +100,8 @@ const CryptoDetails = () => {
     genericStats[3].value = genericStats[4].value;
   }
 
+  console.log("CRYPTO DETAILS", cryptoDetails);
+
   return (
     <Col className="coin-detail-container">
       <Col className="coin-heading-container">
