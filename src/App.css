@@ -1,7 +1,7 @@
 :root{
     --text-primary:#000;
-    --bgPrimary:#F9F9F9;
-   --bgSecondary: #F9F9F9;
+    --bgPrimary:white;
+   --bgSecondary: white;
    --blue: #0071bd;
    --light-blue: #e6f7ff;
    --border: #d9d9d9;
@@ -44,6 +44,7 @@ a:hover{
 .routes{
     padding: 20px;
     min-height: 100vh; 
+    background-color: white;
 }
 .nav-container{
     position: fixed;
@@ -157,8 +158,6 @@ a:hover{
 
 .coin-heading-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     border-bottom: 1px solid var(--border);
     padding-top: 20px;
@@ -167,6 +166,7 @@ a:hover{
 }
 
 .coin-heading-container .coin-name{
+    font-family: 'Share Tech', sans-serif;
     font-weight: 900;
     color: var(--blue);
 }
@@ -402,6 +402,7 @@ width: 70%;
 .crypto-card .crypto-image{
     width:35px;
 }
+
 .select-timeperiod{
     width: 200px !important;
     margin-top: 20px !important;

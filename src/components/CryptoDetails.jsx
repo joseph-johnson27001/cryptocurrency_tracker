@@ -100,18 +100,16 @@ const CryptoDetails = () => {
     genericStats[3].value = genericStats[4].value;
   }
 
-  console.log("CRYPTO DETAILS", cryptoDetails);
-
   return (
     <Col className="coin-detail-container">
       <Col className="coin-heading-container">
         <Title level={2} className="coin-name">
           {cryptoDetails.name} ({cryptoDetails.symbol}) Price
         </Title>
-        <p>
+        {/* <p>
           {cryptoDetails.name} live price in US dollars. View value statistics,
           market cap and supply.
-        </p>
+        </p> */}
       </Col>
       <Select
         defaultValue="24h"
