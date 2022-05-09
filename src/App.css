@@ -24,7 +24,7 @@ a:hover{
 }
 
 .navbar{
-    flex: 0.2;
+    z-index: 1000;
     background-color: #000;
 }
 
@@ -33,12 +33,14 @@ a:hover{
 }
 
 .main{
-    flex: 0.8;
     width: 100%;
     overflow-x: auto;
+    margin-top: 10vh;
 }
+
 .navbar-heading {
     font-weight: 300;
+    width: 100%;
 }
 
 .routes{
@@ -47,8 +49,8 @@ a:hover{
 }
 .nav-container{
     position: fixed;
-    left: 0;
-    height: 100vh;
+    top: 0;
+    width: 100vw;
     margin: 0px;
     background-color: #000;
 }
@@ -75,6 +77,15 @@ a:hover{
     border: #fff !important;
 }
 
+.menu-items-container {
+    width: 80vh;
+    height: 100%;
+}
+
+.menu-item {
+    height: 100%;
+}
+
 .heading {
     font-family: 'Share Tech', sans-serif;
 }
@@ -95,9 +106,9 @@ a:hover{
 }
 
 @media screen and (max-width:1000px){
-    .main{
+    /* .main{
         margin-left: 50px;
-    }
+    } */
 }
 
 
@@ -107,34 +118,34 @@ a:hover{
         overflow: hidden;
     }
 
-    .navbar{
+    /* .navbar{
         flex: 1;
-    }
+    } */
 
     .main{
-        flex: 1;
+        /* flex: 1; */
         margin-top: 90px;
         margin-left: 0px;
-        margin-right: 10px;
+        /* margin-right: 10px; */
     }
 
     .nav-container{
         height: 8vh;
-        position:fixed;
+        /* position:fixed; */
         width: 100%;
         z-index: 100;
         background-color: #000
     }
   
-    .menu-control-container{
+    /* .menu-control-container{
         display: block !important;
         background-color: #000;
-    }
+    } */
 
-    .ant-menu{
+    /* .ant-menu{
         position: absolute;
         right: 0px;
-    }
+    } */
     .home-title{
         font-size: 1.4rem !important;
     }
