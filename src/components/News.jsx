@@ -24,6 +24,9 @@ const News = ({ simplified }) => {
     <Row gutter={[24, 24]}>
       {!simplified && (
         <Col span={24}>
+          <Title level={2} className="heading">
+            Cryptocurrency News
+          </Title>
           <Select
             className="select-news"
             placeholder="Select a Crypto"
