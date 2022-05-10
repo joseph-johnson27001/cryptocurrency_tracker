@@ -1,10 +1,10 @@
 :root{
     --text-primary:#000;
-    --bgPrimary:white;
+    --bgPrimary:rgba(250, 242, 242, 0.829);
    --bgSecondary: white;
    --blue: #0071bd;
    --light-blue: #e6f7ff;
-   --border: #d9d9d9;
+   --border: #c5c2c2;
 }
 
 * {
@@ -21,6 +21,7 @@ a:hover{
 .app{
     display: flex;
     overflow: hidden;
+    background-color: rgba(250, 242, 242, 0.829);
 }
 
 .navbar{
@@ -44,7 +45,7 @@ a:hover{
 .routes{
     padding: 20px;
     min-height: 100vh; 
-    background-color: white;
+    background-color: rgba(250, 242, 242, 0.829);
 }
 .nav-container{
     position: fixed;

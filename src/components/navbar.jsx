@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <div className="nav-container">
       <div className="logo-container">
-        <Typography.Title level={2} className="logo">
+        <Typography.Title level={2} className="logo" icon={<FundOutlined />}>
           <Link to="/" className="navbar-heading">
             Cloud Crypto
           </Link>

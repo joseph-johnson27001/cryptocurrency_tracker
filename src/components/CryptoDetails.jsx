@@ -163,7 +163,7 @@ const CryptoDetails = () => {
           ))}
         </Col>
       </Col>
-      <Col className="coin-desc-link">
+      {/* <Col className="coin-desc-link">
         <Row className="coin-desc">
           <Col>
             <Title level={3} className="coin-details-heading">
@@ -189,7 +189,7 @@ const CryptoDetails = () => {
             </div>
           ))}
         </Col>
-      </Col>
+      </Col> */}
     </Col>
   );
 };
