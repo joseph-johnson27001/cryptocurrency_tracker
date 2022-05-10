@@ -72,10 +72,10 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
 
   return (
     <>
-      <Row className="chart-header">
-        <Title level={2} className="chart-title">
+      <Row className="chart-header" style={{ display: "inline-block" }}>
+        {/* <Title level={2} className="chart-title">
           {coinName} Price Chart{" "}
-        </Title>
+        </Title> */}
         <Col className="price-container">
           <Title level={5} className="price-change">
             <div>

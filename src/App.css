@@ -1,10 +1,9 @@
 :root{
     --text-primary:#000;
-    --bgPrimary:rgba(250, 242, 242, 0.829);
-   --bgSecondary: white;
-   --blue: #0071bd;
-   --light-blue: #e6f7ff;
-   --border: #c5c2c2;
+    --bgPrimary:#fff;
+   --bgSecondary: #F9F9F9;
+   --orange: rgb(255, 115, 0);
+   --border: #d9d9d9;
 }
 
 * {
@@ -15,48 +14,52 @@
 }
 
 a:hover{
-    color: var(--blue) !important;
+    color: var(--orange) !important;
 }
 
 .app{
     display: flex;
+    flex-direction: column;
     overflow: hidden;
-    background-color: rgba(250, 242, 242, 0.829);
+    background-color: var(--bgPrimary);
 }
 
 .navbar{
-    flex: 0.2;
+    flex: 1;
     background-color: #000;
 }
 
 .navbar .navbar-heading {
     font-family: 'Share Tech', sans-serif;
+    color: var(--orange)
 }
 
 .main{
-    flex: 0.8;
-    width: 100%;
-    overflow-x: auto;
+    flex: 1;
+    margin-top: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
 .navbar-heading {
     font-weight: 300;
 }
 
 .routes{
-    padding: 20px;
+    padding: 30px;
     min-height: 100vh; 
-    background-color: rgba(250, 242, 242, 0.829);
+    background-color: var(--bgSecondary);
 }
 .nav-container{
-    position: fixed;
-    left: 0;
-    height: 100vh;
-    margin: 0px;
-    background-color: #000;
+    height: 8vh;
+    position:fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--text-primary)
 }
 
 .logo-container{
-    background-color: #000;
+    background-color: var(--text-primary);
     display: flex;
     padding: 10px;
     align-items: center;
@@ -69,7 +72,7 @@ a:hover{
    color: white;
 }
 .menu-control-container{
-    display: none !important;
+    display: block !important;
     position: absolute !important;
     right: 10px !important;
     font-size: 1.2rem !important;
@@ -92,65 +95,22 @@ a:hover{
     align-items: center;
 }
 
+.ant-menu{
+    position: absolute;
+    right: 0px;
+}
+
 .ant-menu-item {
     background-color: #000;
 }
 
 .global-crypto-container {
     display: flex;
+    text-align: center;
 }
 
 .show-more{
     font-size: 1.1rem !important;
-}
-
-@media screen and (max-width:1000px){
-    .main{
-        margin-left: 50px;
-    }
-}
-
-
-@media screen and (max-width:800px){
-    .app{
-        flex-direction: column;
-        overflow: hidden;
-    }
-
-    .navbar{
-        flex: 1;
-    }
-
-    .main{
-        flex: 1;
-        margin-top: 90px;
-        margin-left: 0px;
-        margin-right: 10px;
-    }
-
-    .nav-container{
-        height: 8vh;
-        position:fixed;
-        width: 100%;
-        z-index: 100;
-        background-color: #000
-    }
-  
-    .menu-control-container{
-        display: block !important;
-        background-color: #000;
-    }
-
-    .ant-menu{
-        position: absolute;
-        right: 0px;
-    }
-    .home-title{
-        font-size: 1.4rem !important;
-    }
-    .global-crypto-container {
-        display: block;
-    }
 }
 
 .coin-detail-container{
@@ -161,7 +121,6 @@ a:hover{
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid var(--border);
-    padding-top: 20px;
     padding-bottom: 20px;
     gap: 10px;
 }
@@ -169,7 +128,6 @@ a:hover{
 .coin-heading-container .coin-name{
     font-family: 'Share Tech', sans-serif;
     font-weight: 900;
-    color: var(--blue);
 }
 
 .coin-heading-container p{
@@ -189,13 +147,13 @@ a:hover{
     font-weight: 700;
     font-size: 1.4rem;
     margin-top: 20px;
-    color: var(--blue);
+    color: var(--orange);
 }
 
 .coin-details-heading{
     font-weight: 700 !important;
     margin-top: 20px !important;
-    color: var(--blue) !important;
+    color: var(--orange) !important;
 }
 
 .coin-stats{
@@ -244,7 +202,7 @@ a:hover{
 
 .coin-desc-link h2{
     font-weight: 700;
-    color: var(--blue);
+    color: var(--orange);
 }
 
 .coin-desc-link p{
@@ -253,7 +211,7 @@ a:hover{
 }
 
 .coin-desc-link a{
-    color: var(--blue);
+    color: var(--orange);
 }
 
 .coin-desc-link h3{
@@ -287,7 +245,7 @@ a:hover{
 }
 
 .coin-link a{
-    color: var(--blue);
+    color: var(--orange);
     font-weight: 700;
     font-size: 1rem;
 }
@@ -354,6 +312,11 @@ width: 70%;
 
 .chart {
     background-color: #000;
+}
+
+.select-container {
+    display: inline-flex;
+    width: 70%
 }
 
 .chart-header{

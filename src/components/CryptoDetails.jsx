@@ -106,21 +106,19 @@ const CryptoDetails = () => {
         <Title level={2} className="coin-name">
           {cryptoDetails.name} ({cryptoDetails.symbol}) Price
         </Title>
-        {/* <p>
-          {cryptoDetails.name} live price in US dollars. View value statistics,
-          market cap and supply.
-        </p> */}
       </Col>
-      <Select
-        defaultValue="24h"
-        className="select-timeperiod"
-        placeholder="Select Timeperiod"
-        onChange={(value) => setTimePeriod(value)}
-      >
-        {time.map((date) => (
-          <Option key={date}>{date}</Option>
-        ))}
-      </Select>
+      <div className="select-container">
+        <Select
+          defaultValue="24h"
+          className="select-timeperiod"
+          placeholder="Select Timeperiod"
+          onChange={(value) => setTimePeriod(value)}
+        >
+          {time.map((date) => (
+            <Option key={date}>{date}</Option>
+          ))}
+        </Select>
+      </div>
       <LineChart
         coinHistory={coinHistory}
         currentPrice={millify(cryptoDetails.price)}

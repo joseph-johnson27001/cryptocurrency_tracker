@@ -10,7 +10,7 @@ import {
 } from "@ant-design/icons";
 
 const Navbar = () => {
-  const [activeMenu, setActiveMenu] = useState(true);
+  const [activeMenu, setActiveMenu] = useState(false);
   const [screenSize, setScreenSize] = useState(undefined);
 
   useEffect(() => {
@@ -22,14 +22,6 @@ const Navbar = () => {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  useEffect(() => {
-    if (screenSize <= 800) {
-      setActiveMenu(false);
-    } else {
-      setActiveMenu(true);
-    }
-  }, [screenSize]);
 
   return (
     <div className="nav-container">
