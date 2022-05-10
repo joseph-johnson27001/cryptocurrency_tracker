@@ -44,6 +44,7 @@ const Navbar = () => {
             icon={<HomeOutlined />}
             key="home"
             style={{ background: "black" }}
+            onClick={() => setActiveMenu(!activeMenu)}
           >
             <Link to="/">Home</Link>
           </Menu.Item>
@@ -51,6 +52,7 @@ const Navbar = () => {
             icon={<FundOutlined />}
             key="cryptocurrencies"
             style={{ background: "black" }}
+            onClick={() => setActiveMenu(!activeMenu)}
           >
             <Link to="/cryptocurrencies">Cryptocurrencies</Link>
           </Menu.Item>
@@ -58,6 +60,7 @@ const Navbar = () => {
             icon={<BulbOutlined />}
             key="news"
             style={{ background: "black" }}
+            onClick={() => setActiveMenu(!activeMenu)}
           >
             <Link to="/news">News</Link>
           </Menu.Item>

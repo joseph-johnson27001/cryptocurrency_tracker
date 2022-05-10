@@ -17,6 +17,10 @@ a:hover{
     color: white !important;
 }
 
+a::before {
+    color: white !important;
+}
+
 .app{
     display: flex;
     flex-direction: column;
