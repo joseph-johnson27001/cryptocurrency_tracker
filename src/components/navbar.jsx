@@ -40,13 +40,25 @@ const Navbar = () => {
       </div>
       {activeMenu && (
         <Menu theme="dark" style={{ background: "black" }}>
-          <Menu.Item icon={<HomeOutlined />} key="home">
+          <Menu.Item
+            icon={<HomeOutlined />}
+            key="home"
+            style={{ background: "black" }}
+          >
             <Link to="/">Home</Link>
           </Menu.Item>
-          <Menu.Item icon={<FundOutlined />} key="cryptocurrencies">
+          <Menu.Item
+            icon={<FundOutlined />}
+            key="cryptocurrencies"
+            style={{ background: "black" }}
+          >
             <Link to="/cryptocurrencies">Cryptocurrencies</Link>
           </Menu.Item>
-          <Menu.Item icon={<BulbOutlined />} key="news">
+          <Menu.Item
+            icon={<BulbOutlined />}
+            key="news"
+            style={{ background: "black" }}
+          >
             <Link to="/news">News</Link>
           </Menu.Item>
         </Menu>

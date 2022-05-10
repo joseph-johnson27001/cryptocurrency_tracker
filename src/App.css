@@ -14,7 +14,7 @@
 }
 
 a:hover{
-    color: var(--orange) !important;
+    color: white !important;
 }
 
 .app{
@@ -98,10 +98,6 @@ a:hover{
 .ant-menu{
     position: absolute;
     right: 0px;
-}
-
-.ant-menu-item {
-    background-color: #000;
 }
 
 .global-crypto-container {
