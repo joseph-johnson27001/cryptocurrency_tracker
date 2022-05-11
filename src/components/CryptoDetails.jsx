@@ -106,8 +106,6 @@ const CryptoDetails = () => {
         <Title level={2} className="coin-name">
           {cryptoDetails.name} ({cryptoDetails.symbol}) Price
         </Title>
-      </Col>
-      <div className="select-container">
         <Select
           defaultValue="24h"
           className="select-timeperiod"
@@ -118,7 +116,7 @@ const CryptoDetails = () => {
             <Option key={date}>{date}</Option>
           ))}
         </Select>
-      </div>
+      </Col>
       <LineChart
         coinHistory={coinHistory}
         currentPrice={millify(cryptoDetails.price)}

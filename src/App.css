@@ -39,7 +39,11 @@ a::before {
 }
 
 .navbar a:hover {
-    color: var(--orange) !important;
+    color: orange !important;
+}
+
+.navbar a:focus {
+    color: orange !important;
 }
 
 .navbar .navbar-heading {
@@ -54,6 +58,10 @@ a::before {
 
 .main a {
     color: var(--orange) !important;
+}
+
+.main a:hover {
+    color: orange !important;
 }
 
 .navbar-heading {
@@ -85,8 +93,18 @@ a::before {
     position: absolute !important;
     right: 4vw !important;
     font-size: 1.2rem !important;
-    background-color: #fff !important;
-    border: #fff !important;
+    background-color: black !important;
+    border: 1px solid var(--orange) !important;
+    color: var(--orange) !important;
+}
+.menu-control-container:focus {
+    border: 1px solid orange !important;
+    color: orange !important;
+}
+
+.menu-control-container:hover {
+    border: 1px solid orange !important;
+    color: orange !important;
 }
 
 .heading {
@@ -139,12 +157,12 @@ a::before {
 .coin-heading-container .coin-name{
     font-family: 'Share Tech', sans-serif;
     font-weight: 900;
+    margin-bottom: 0px !important;
 }
 
 .coin-heading-container p{
     font-size: 1rem;
     opacity: 0.9;
-    margin-bottom: 20px;
 }
 
 .stats-container{
@@ -284,8 +302,6 @@ a::before {
     .coin-detail-container{
         margin: 0;
     }
-}
-@media screen and (max-width: 500px){
     .heading{
         margin-top: 20px;
     }
@@ -302,7 +318,7 @@ a::before {
     justify-content: space-between !important;
 }
 .news-title{
-width: 70%;
+    width: 70%;
 }
 
 .news-image-container .img{
@@ -325,16 +341,15 @@ width: 70%;
     background-color: #000;
 }
 
-.select-container {
-    display: inline-flex;
-    width: 70%
+.change-container {
+    display: flex;
 }
 
 .chart-header{
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
-    gap: 50px;
     color: #0071bd;
+    width: 100%;
 }
 .chart-title{
     color: #0071bd !important;
@@ -342,8 +357,11 @@ width: 70%;
 .price-container{
     display: flex !important;
     gap: 20px !important;
-    align-items: center !important;
+    margin-top: 15px;
+    align-items: right !important;
     flex-wrap: wrap !important;
+    justify-content: right;
+    width: 100%;
 }
 .price-change{
     font-weight: 900 !important;
@@ -356,7 +374,7 @@ width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 25px;
 }
 .show-more{
     margin-top: 0px !important;
