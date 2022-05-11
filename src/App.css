@@ -274,10 +274,6 @@ a::before {
     font-size: 1rem;
 }
 
-.coin-link:hover, .coin-stats:hover{
-    background-color: var(--bgSecondary);
-}
-
 @media screen and (max-width:1000px){
     .stats-container{
         flex-direction: column;
@@ -299,7 +295,7 @@ a::before {
     }
     .heading{
         margin-top: 20px;
-    }
+    }  
 }
 
 .select-news{
