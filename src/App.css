@@ -38,6 +38,10 @@ a::before {
     z-index: 1000;
 }
 
+.navbar a:hover {
+    color: var(--orange) !important;
+}
+
 .navbar .navbar-heading {
     font-family: 'Share Tech', sans-serif;
     color: var(--orange)
@@ -46,6 +50,10 @@ a::before {
 .main{
     flex: 1;
     margin-top: 70px;
+}
+
+.main a {
+    color: var(--orange) !important;
 }
 
 .navbar-heading {
@@ -113,6 +121,7 @@ a::before {
 
 .show-more{
     font-size: 1.1rem !important;
+    color: var(--orange) !important;
 }
 
 .coin-detail-container{
