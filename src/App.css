@@ -124,8 +124,7 @@ a::before {
 }
 
 .global-crypto-container {
-    text-align: center !important;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
 }
 

@@ -57,8 +57,11 @@ const Cryptocurrencies = ({ simplified }) => {
                   <p
                     style={{
                       color:
-                        Math.sign(currency.change) === -1 ? "#F93154" : "green",
+                        Math.sign(currency.change) === -1
+                          ? "#F93154"
+                          : "success",
                       display: "inline",
+                      fontSize: "1.1rem",
                     }}
                   >
                     {" "}
