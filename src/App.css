@@ -80,6 +80,7 @@ a::before {
     display: flex;
     padding: 5px 5%;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo{
@@ -90,16 +91,11 @@ a::before {
 }
 .menu-control-container{
     display: block !important;
-    position: absolute !important;
-    right: 4vw !important;
+
     font-size: 1.2rem !important;
     background-color: black !important;
     border: 1px solid var(--orange) !important;
     color: var(--orange) !important;
-}
-.menu-control-container:focus {
-    border: 1px solid orange !important;
-    color: orange !important;
 }
 
 .menu-control-container:hover {
