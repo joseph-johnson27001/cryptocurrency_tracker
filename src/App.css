@@ -25,13 +25,17 @@ a::before {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    background-color: var(--bgPrimary);
+    background-color: var(--bgSecondary);
 }
 
 .navbar{
     flex: 1;
     background-color: #000;
-    border-bottom: 2px solid var(--orange)
+    border-bottom: 2px solid var(--orange);
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    z-index: 1000;
 }
 
 .navbar .navbar-heading {
@@ -41,8 +45,7 @@ a::before {
 
 .main{
     flex: 1;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-top: 70px;
 }
 
 .navbar-heading {
@@ -53,17 +56,18 @@ a::before {
     padding: 30px;
     min-height: 100vh; 
     background-color: var(--bgSecondary);
+    margin: 0px 4vw;
 }
 
 .logo-container{
     background-color: var(--text-primary);
     display: flex;
-    padding: 10px 20px;
+    padding: 5px 5%;
     align-items: center;
-    width: 100%;
 }
+
 .logo{
-    margin: 10px 15px;
+    margin: 10px 0px 5px 0px;
 }
 .logo a{
    color: white;
@@ -71,11 +75,10 @@ a::before {
 .menu-control-container{
     display: block !important;
     position: absolute !important;
-    right: 10px !important;
+    right: 4vw !important;
     font-size: 1.2rem !important;
     background-color: #fff !important;
     border: #fff !important;
-    margin-right: 20px;
 }
 
 .heading {
@@ -99,8 +102,13 @@ a::before {
 }
 
 .global-crypto-container {
-    display: flex;
-    text-align: center;
+    text-align: center !important;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.global-crypto-info-container {
+    display: flex; 
 }
 
 .show-more{

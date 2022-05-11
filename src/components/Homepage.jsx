@@ -17,10 +17,10 @@ const Homepage = () => {
 
   return (
     <>
+      <Title level={2} className="heading">
+        Global Crypto Stats
+      </Title>
       <Col className="global-crypto-info-container">
-        <Title level={2} className="heading">
-          Global Crypto Stats
-        </Title>
         <Row gutter={16} className="global-crypto-container">
           <Col>
             <Statistic
