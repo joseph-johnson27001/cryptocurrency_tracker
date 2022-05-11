@@ -43,7 +43,7 @@ a::before {
 }
 
 .navbar a:focus {
-    color: orange !important;
+    color: var(--orange) !important;
 }
 
 .navbar .navbar-heading {
