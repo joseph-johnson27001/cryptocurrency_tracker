@@ -87,6 +87,7 @@ a::before {
     width: 90%;
     max-width: 1200px;
     margin: auto;
+    position: relative;
 }
 
 .logo{
@@ -97,16 +98,25 @@ a::before {
 }
 .menu-control-container{
     display: block !important;
-
     font-size: 1.2rem !important;
     background-color: black !important;
     border: 1px solid var(--orange) !important;
     color: var(--orange) !important;
 }
 
+
 .menu-control-container:hover {
     border: 1px solid orange !important;
     color: orange !important;
+}
+
+#nav-select {
+    position: absolute;
+    top: 76px;
+    right: 30px;
+    border-right: 1px solid var(--orange) !important;
+    border-left: 1px solid var(--orange) !important;
+    border-bottom: 1px solid var(--orange) !important;
 }
 
 .heading {

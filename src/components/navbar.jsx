@@ -37,36 +37,37 @@ const Navbar = () => {
         >
           <MenuOutlined />
         </Button>
+        {activeMenu && (
+          <Menu
+            theme="dark"
+            style={{ background: "black", zIndex: 1000 }}
+            onClick={() => setActiveMenu(!activeMenu)}
+            id="nav-select"
+          >
+            <Menu.Item
+              icon={<HomeOutlined />}
+              key="home"
+              style={{ background: "black" }}
+            >
+              <Link to="/">Home</Link>
+            </Menu.Item>
+            <Menu.Item
+              icon={<FundOutlined />}
+              key="cryptocurrencies"
+              style={{ background: "black" }}
+            >
+              <Link to="/cryptocurrencies">Cryptocurrencies</Link>
+            </Menu.Item>
+            <Menu.Item
+              icon={<BulbOutlined />}
+              key="news"
+              style={{ background: "black" }}
+            >
+              <Link to="/news">News</Link>
+            </Menu.Item>
+          </Menu>
+        )}
       </div>
-      {activeMenu && (
-        <Menu
-          theme="dark"
-          style={{ background: "black", zIndex: 1000 }}
-          onClick={() => setActiveMenu(!activeMenu)}
-        >
-          <Menu.Item
-            icon={<HomeOutlined />}
-            key="home"
-            style={{ background: "black" }}
-          >
-            <Link to="/">Home</Link>
-          </Menu.Item>
-          <Menu.Item
-            icon={<FundOutlined />}
-            key="cryptocurrencies"
-            style={{ background: "black" }}
-          >
-            <Link to="/cryptocurrencies">Cryptocurrencies</Link>
-          </Menu.Item>
-          <Menu.Item
-            icon={<BulbOutlined />}
-            key="news"
-            style={{ background: "black" }}
-          >
-            <Link to="/news">News</Link>
-          </Menu.Item>
-        </Menu>
-      )}
     </div>
   );
 };
