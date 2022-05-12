@@ -3,7 +3,6 @@ import { Button, Menu, Typography, Avatar } from "antd";
 import { Link } from "react-router-dom";
 import {
   HomeOutlined,
-  MoneyCollectOutlined,
   BulbOutlined,
   FundOutlined,
   MenuOutlined,
@@ -13,15 +12,10 @@ import icon from "../images/Logo.png";
 
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(false);
-  const [screenSize, setScreenSize] = useState(undefined);
+  const [setScreenSize] = useState(undefined);
 
   useEffect(() => {
     const handleResize = () => setScreenSize(window.innerWidth);
-
-    window.addEventListener("resize", handleResize);
-
-    handleResize();
-
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
