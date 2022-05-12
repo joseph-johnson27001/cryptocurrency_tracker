@@ -23,8 +23,6 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  console.log("state", activeMenu);
-
   return (
     <div className="nav-container">
       <div className="logo-container">
