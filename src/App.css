@@ -73,14 +73,19 @@ a::before {
     min-height: 100vh; 
     background-color: var(--bgSecondary);
     margin: 0px 4vw;
+    min-width: 60%;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .logo-container{
     background-color: var(--text-primary);
     display: flex;
-    padding: 5px 5%;
+    padding: 5px 30px;
     align-items: center;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .logo{
@@ -109,13 +114,6 @@ a::before {
 
 .home-title {
     font-family: 'Share Tech', sans-serif;
-}
-
-.loader{
-    height: 81vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .ant-menu{
@@ -283,7 +281,7 @@ a::before {
     }
     .stats-container h2{
         margin-top: 0px;
-    }
+    }   
 }
 
 @media screen and (max-width: 500px){
