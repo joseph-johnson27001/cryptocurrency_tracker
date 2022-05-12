@@ -91,15 +91,17 @@ a::before {
     position: relative;
 }
 
-.logo{
-    margin: 10px 0px 15px 10px;
-}
-.logo a{
-   color: white;
+.logo-container h2 {
+    margin-bottom: 5px !important;
 }
 
+.logo{
+    margin: 10px 0px 5px 10px;
+}
+
+
 .icon {
-    margin-right: 5px !important;
+    margin-right: 10px !important;
     padding-bottom: 5px !important;
 }
 
@@ -119,7 +121,7 @@ a::before {
 
 #nav-select {
     position: absolute;
-    top: 78px;
+    top: 68px;
     right: 8px;
     border-right: 1px solid var(--orange) !important;
     border-left: 1px solid var(--orange) !important;

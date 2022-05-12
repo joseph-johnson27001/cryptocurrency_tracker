@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Button, Menu, Typography, Avatar } from "antd";
 import { Link } from "react-router-dom";
 import {
@@ -12,12 +12,6 @@ import icon from "../images/Logo.png";
 
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(false);
-  const [setScreenSize] = useState(undefined);
-
-  useEffect(() => {
-    const handleResize = () => setScreenSize(window.innerWidth);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   return (
     <div className="nav-container">
