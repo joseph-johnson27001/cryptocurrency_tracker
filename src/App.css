@@ -82,7 +82,7 @@ a::before {
 .logo-container{
     background-color: var(--text-primary);
     display: flex;
-    padding: 5px 2rem;
+    padding: 5px 10px;
     align-items: center;
     justify-content: space-between;
     width: 90%;
@@ -119,8 +119,8 @@ a::before {
 
 #nav-select {
     position: absolute;
-    top: 76px;
-    right: 30px;
+    top: 78px;
+    right: 8px;
     border-right: 1px solid var(--orange) !important;
     border-left: 1px solid var(--orange) !important;
     border-bottom: 1px solid var(--orange) !important;
