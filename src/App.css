@@ -48,6 +48,7 @@ a::before {
 
 .navbar .navbar-heading {
     font-family: 'Share Tech', sans-serif;
+    margin-left: 5px;
     color: var(--orange)
 }
 
@@ -91,11 +92,17 @@ a::before {
 }
 
 .logo{
-    margin: 10px 0px 5px 0px;
+    margin: 10px 0px 15px 10px;
 }
 .logo a{
    color: white;
 }
+
+.icon {
+    margin-right: 5px !important;
+    padding-bottom: 5px !important;
+}
+
 .menu-control-container{
     display: block !important;
     font-size: 1.2rem !important;

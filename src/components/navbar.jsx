@@ -9,6 +9,8 @@ import {
   MenuOutlined,
 } from "@ant-design/icons";
 
+import icon from "../images/Logo.png";
+
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(false);
   const [screenSize, setScreenSize] = useState(undefined);
@@ -28,6 +30,7 @@ const Navbar = () => {
       <div className="logo-container">
         <Typography.Title level={2} className="logo" icon={<FundOutlined />}>
           <Link to="/" className="navbar-heading">
+            <Avatar src={icon} size="large" className="icon" />
             Cloud Crypto
           </Link>
         </Typography.Title>
