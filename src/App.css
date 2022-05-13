@@ -324,13 +324,15 @@ a::before {
     justify-content: space-between !important;
 }
 .news-title{
-    width: 70%;
+    width: 80%;
 }
 
-.news-image-container .img{
-    width:100px;
-    height:100px;
+.news-image {
+    max-height: 80px;
+    max-width: 80px;
+    margin: 5px 0px 0px 5px;
 }
+
 .news-card p{
     color: black;
     margin: 10px 0px !important;
