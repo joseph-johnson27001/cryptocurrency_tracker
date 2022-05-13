@@ -317,7 +317,7 @@ a::before {
     width: 250px;
 }
 .news-card{
-    min-height: 300px !important;
+    min-height: 350px !important;
 }
 .news-image-container{
     display: flex !important;
