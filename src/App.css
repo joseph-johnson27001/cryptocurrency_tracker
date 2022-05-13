@@ -331,6 +331,7 @@ a::before {
     max-height: 80px;
     max-width: 80px;
     margin: 5px 0px 0px 5px;
+    border-radius: 25%;
 }
 
 .news-card p{
