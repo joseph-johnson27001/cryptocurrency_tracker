@@ -331,9 +331,29 @@ a::before {
 .news-image {
     max-height: 80px;
     max-width: 80px;
-    margin: 5px 0px 0px 5px;
+    margin-left: 5px;
     border-radius: 25%;
     overflow: auto;
+
+}
+
+@media (max-width: 500px) {
+    .news-image {
+        max-height: 60px;
+        max-width: 60px;
+    }
+}
+
+@media (max-width: 315px) {
+    .routes {
+        width: 100%;
+    }
+    .main {
+        width: 100%
+    }
+    .navbar-heading {
+        font-size: 1.2rem
+    }
 }
 
 .news-card p{
