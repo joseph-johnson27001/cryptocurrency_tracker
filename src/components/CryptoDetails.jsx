@@ -83,14 +83,14 @@ const CryptoDetails = () => {
     },
     {
       title: "Total Supply",
-      value: `$ ${
+      value: `${
         cryptoDetails?.supply?.total && millify(cryptoDetails?.supply?.total)
       }`,
       icon: <ExclamationCircleOutlined />,
     },
     {
       title: "Circulating Supply",
-      value: `$ ${millify(cryptoDetails.supply.circulating)}`,
+      value: `${millify(cryptoDetails.supply.circulating)}`,
       icon: <ExclamationCircleOutlined />,
     },
   ];
