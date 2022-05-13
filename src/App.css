@@ -324,6 +324,7 @@ a::before {
     justify-content: space-between !important;
 }
 .news-title{
+    overflow: auto;
     width: 80%;
 }
 
@@ -332,6 +333,7 @@ a::before {
     max-width: 80px;
     margin: 5px 0px 0px 5px;
     border-radius: 25%;
+    overflow: auto;
 }
 
 .news-card p{
