@@ -342,6 +342,9 @@ a::before {
         max-height: 60px;
         max-width: 60px;
     }
+    .home-heading-container {
+        flex-direction: column !important;
+    }
 }
 
 @media (max-width: 700px) {
