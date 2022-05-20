@@ -357,6 +357,9 @@ a::before {
     .navbar-heading {
         font-size: 1.2rem
     }
+    #nav-select {
+        top: 65px;
+    }
 }
 
 .news-card p{
