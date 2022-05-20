@@ -95,7 +95,6 @@ const CryptoDetails = () => {
     },
   ];
 
-  // BELLOW: FIX FOR TERRA USD CHART TO NOT RETURN NULL AS NO TOTAL SUPPLY LISTED
   if (genericStats[3].value === "$ null") {
     genericStats[3].value = genericStats[4].value;
   }
