@@ -345,6 +345,9 @@ a::before {
     .home-heading-container {
         flex-direction: column !important;
     }
+    .navbar-heading h1 {
+        display: none;
+    }
 }
 
 @media (max-width: 700px) {
@@ -359,6 +362,9 @@ a::before {
     }
     #nav-select {
         top: 65px;
+    }
+    .logo {
+        margin-left: 0px;
     }
 }
 
