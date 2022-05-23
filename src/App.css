@@ -305,6 +305,7 @@ a::before {
     max-height: 80px;
     max-width: 80px;
     margin-left: 5px;
+    margin-top: 5px;
     border-radius: 25%;
     overflow: auto;
 }
@@ -399,6 +400,9 @@ a::before {
 }
 
 @media screen and (max-width:1000px){
+    .news-card{
+        min-height: 400px !important;
+    }
     .stats-container{
         flex-direction: column;
     }
@@ -430,7 +434,7 @@ a::before {
 
 @media (max-width: 500px) {
     .news-card{
-        min-height: 500px !important;
+        min-height: 300px !important;
     }
     .news-image {
         max-height: 60px;
@@ -453,9 +457,4 @@ a::before {
     }  
 }
 
-@media (max-width: 300px) {
-    .news-card{
-        min-height: 700px !important;
-    }
-}
 

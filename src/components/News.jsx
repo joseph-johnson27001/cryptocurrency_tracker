@@ -46,13 +46,15 @@ const News = ({ simplified }) => {
         </Col>
       )}
       {cryptoNews.value.map((news, i) => (
-        <Col xs={24} md={24} lg={12} key={i}>
+        <Col xs={24} md={12} xl={8} key={i}>
           <Card hoverable className="news-card">
             <div className="news-card-body">
               <a href={news.url} target="_blank" rel="noreferrer">
                 <div className="news-image-container">
                   <Title className="news-title" level={4}>
-                    {news.name}
+                    {news.name > 100
+                      ? `${news.name.substring(0, 100)}...`
+                      : news.name}
                   </Title>
                   <img
                     src={news?.image?.thumbnail?.contentUrl || demoImage}
@@ -60,11 +62,7 @@ const News = ({ simplified }) => {
                     className="news-image"
                   />
                 </div>
-                <p>
-                  {news.description > 100
-                    ? `${news.description.substring(0, 100)}...`
-                    : news.description}
-                </p>
+                <p>{`${news.description.substring(0, 150)}...`}</p>
                 <div className="provider-container">
                   <div>
                     <Avatar
