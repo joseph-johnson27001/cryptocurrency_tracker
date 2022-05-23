@@ -370,19 +370,21 @@ a::before {
     margin: 10px 0px !important;
 }
 .news-card{
-    min-height: 350px !important;
+    min-height: 400px !important;
+    margin-bottom: 20px !important;
+    height: 90% !important;
 }
-.ant-card-body {
+.news-card-body {
     position: relative !important;
-    height: 100% !important;
+    margin-bottom: 10px !important;
+    height: 90% !important;
 }
 .provider-container{
     position: absolute !important;
     bottom: 10;
     display: flex !important;
     justify-content: space-between !important;
-    width: 85%;
-    margin: auto;
+    width: 100%;
 }
 .provider-name{
     margin-left: 10px;
