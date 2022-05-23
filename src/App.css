@@ -377,10 +377,12 @@ a::before {
     height: 100% !important;
 }
 .provider-container{
+    position: absolute !important;
+    bottom: 10;
     display: flex !important;
     justify-content: space-between !important;
-    position: absolute !important;
-    bottom: 10
+    width: 85%;
+    margin: auto;
 }
 .provider-name{
     margin-left: 10px;
