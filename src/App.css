@@ -316,9 +316,6 @@ a::before {
 .select-news{
     width: 250px;
 }
-.news-card{
-    min-height: 350px !important;
-}
 .news-image-container{
     display: flex !important;
     justify-content: space-between !important;
@@ -341,7 +338,7 @@ a::before {
     .news-image {
         max-height: 60px;
         max-width: 60px;
-    }
+    }   
     .home-heading-container {
         flex-direction: column !important;
     }
@@ -372,9 +369,18 @@ a::before {
     color: black;
     margin: 10px 0px !important;
 }
+.news-card{
+    min-height: 350px !important;
+}
+.ant-card-body {
+    position: relative !important;
+    height: 100% !important;
+}
 .provider-container{
-    display: flex;
-    justify-content: space-between;
+    display: flex !important;
+    justify-content: space-between !important;
+    position: absolute !important;
+    bottom: 10
 }
 .provider-name{
     margin-left: 10px;
