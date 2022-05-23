@@ -33,6 +33,8 @@ const CryptoDetails = () => {
 
   if (isFetching) return "Loading...";
 
+  console.log("cryptoDetails", cryptoDetails);
+
   const time = ["3h", "24h", "7d", "30d", "3m", "1y", "3y", "5y"];
 
   const stats = [
@@ -42,13 +44,13 @@ const CryptoDetails = () => {
       icon: <DollarCircleOutlined />,
     },
     { title: "Rank", value: cryptoDetails.rank, icon: <NumberOutlined /> },
-    {
-      title: "24h Volume",
-      value: `$ ${
-        cryptoDetails["24hVolume"] && millify(cryptoDetails["24hVolume"])
-      }`,
-      icon: <ThunderboltOutlined />,
-    },
+    // {
+    //   title: "24h Volume",
+    //   value: `$ ${
+    //     cryptoDetails["24hVolume"] && millify(cryptoDetails["24hVolume"])
+    //   }`,
+    //   icon: <ThunderboltOutlined />,
+    // },
     {
       title: "Market Cap",
       value: `$ ${cryptoDetails.marketCap && millify(cryptoDetails.marketCap)}`,
@@ -73,7 +75,7 @@ const CryptoDetails = () => {
       icon: <MoneyCollectOutlined />,
     },
     {
-      title: "Aprroved Supply",
+      title: "Aprroved Supply?",
       value: cryptoDetails.supply.confirmed ? (
         <CheckOutlined />
       ) : (
@@ -81,13 +83,13 @@ const CryptoDetails = () => {
       ),
       icon: <ExclamationCircleOutlined />,
     },
-    {
-      title: "Total Supply",
-      value: `${
-        cryptoDetails?.supply?.total && millify(cryptoDetails?.supply?.total)
-      }`,
-      icon: <ExclamationCircleOutlined />,
-    },
+    // {
+    //   title: "Total Supply",
+    //   value: `${
+    //     cryptoDetails?.supply?.total && millify(cryptoDetails?.supply?.total)
+    //   }`,
+    //   icon: <ExclamationCircleOutlined />,
+    // },
     {
       title: "Circulating Supply",
       value: `${millify(cryptoDetails.supply.circulating)}`,
