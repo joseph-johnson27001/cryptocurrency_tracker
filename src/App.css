@@ -289,30 +289,6 @@ a::before {
     font-size: 1rem;
 }
 
-@media screen and (max-width:1000px){
-    .stats-container{
-        flex-direction: column;
-    }
-    .coin-desc-link{
-        flex-direction: column;
-    }
-    .stats-container h2{
-        margin-top: 0px;
-    }   
-}
-
-@media screen and (max-width: 500px){
-    .coin-links{
-        padding: 0px;
-    }
-    .coin-detail-container{
-        margin: 0;
-    }
-    .heading{
-        margin-top: 20px;
-    }  
-}
-
 .select-news{
     width: 250px;
 }
@@ -331,38 +307,6 @@ a::before {
     margin-left: 5px;
     border-radius: 25%;
     overflow: auto;
-
-}
-
-@media (max-width: 500px) {
-    .news-image {
-        max-height: 60px;
-        max-width: 60px;
-    }   
-    .home-heading-container {
-        flex-direction: column !important;
-    }
-    .navbar-heading h1 {
-        display: none;
-    }
-}
-
-@media (max-width: 700px) {
-    .routes {
-        width: 100%;
-    }
-    .main {
-        width: 100%
-    }
-    .navbar-heading {
-        font-size: 1.2rem
-    }
-    #nav-select {
-        top: 65px;
-    }
-    .logo {
-        margin-left: 0px;
-    }
 }
 
 .news-card p{
@@ -453,3 +397,65 @@ a::before {
     width: 200px !important;
     margin-top: 20px !important;
 }
+
+@media screen and (max-width:1000px){
+    .stats-container{
+        flex-direction: column;
+    }
+    .coin-desc-link{
+        flex-direction: column;
+    }
+    .stats-container h2{
+        margin-top: 0px;
+    }   
+}
+
+@media (max-width: 700px) {
+    .routes {
+        width: 100%;
+    }
+    .main {
+        width: 100%
+    }
+    .navbar-heading {
+        font-size: 1.2rem
+    }
+    #nav-select {
+        top: 65px;
+    }
+    .logo {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .news-card{
+        min-height: 500px !important;
+    }
+    .news-image {
+        max-height: 60px;
+        max-width: 60px;
+    }   
+    .home-heading-container {
+        flex-direction: column !important;
+    }
+    .navbar-heading h1 {
+        display: none;
+    }
+    .coin-links{
+        padding: 0px;
+    }
+    .coin-detail-container{
+        margin: 0;
+    }
+    .heading{
+        margin-top: 20px;
+    }  
+}
+
+@media (max-width: 300px) {
+    .news-card{
+        min-height: 700px !important;
+    }
+}
+
