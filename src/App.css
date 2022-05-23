@@ -370,7 +370,7 @@ a::before {
     margin: 10px 0px !important;
 }
 .news-card{
-    min-height: 400px !important;
+    min-height: 350px !important;
     margin-bottom: 20px !important;
     height: 90% !important;
 }
