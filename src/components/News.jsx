@@ -52,9 +52,7 @@ const News = ({ simplified }) => {
               <a href={news.url} target="_blank" rel="noreferrer">
                 <div className="news-image-container">
                   <Title className="news-title" level={4}>
-                    {news.name > 100
-                      ? `${news.name.substring(0, 100)}...`
-                      : news.name}
+                    {`${news.name.substring(0, 80)}...`}
                   </Title>
                   <img
                     src={news?.image?.thumbnail?.contentUrl || demoImage}
@@ -62,7 +60,7 @@ const News = ({ simplified }) => {
                     className="news-image"
                   />
                 </div>
-                <p>{`${news.description.substring(0, 150)}...`}</p>
+                <p>{`${news.description.substring(0, 100)}...`}</p>
                 <div className="provider-container">
                   <div>
                     <Avatar
