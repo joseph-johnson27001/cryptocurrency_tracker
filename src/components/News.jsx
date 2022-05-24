@@ -60,7 +60,7 @@ const News = ({ simplified }) => {
                     className="news-image"
                   />
                 </div>
-                <p>{`${news.description.substring(0, 100)}...`}</p>
+                <p>{`${news.description.substring(0, 150)}...`}</p>
                 <div className="provider-container">
                   <div>
                     <Avatar
