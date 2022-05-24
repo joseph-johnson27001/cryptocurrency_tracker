@@ -12,7 +12,7 @@ import {
   TrophyOutlined,
   CheckOutlined,
   NumberOutlined,
-  ThunderboltOutlined,
+  // ThunderboltOutlined,
 } from "@ant-design/icons";
 
 import {
@@ -32,8 +32,6 @@ const CryptoDetails = () => {
   const cryptoDetails = data?.data?.coin;
 
   if (isFetching) return "Loading...";
-
-  console.log("cryptoDetails", cryptoDetails);
 
   const time = ["3h", "24h", "7d", "30d", "3m", "1y", "3y", "5y"];
 
