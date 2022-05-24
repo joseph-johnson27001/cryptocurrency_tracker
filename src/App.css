@@ -329,6 +329,7 @@ a::before {
     bottom: 10;
     display: flex !important;
     justify-content: space-between !important;
+    align-items: center !important;
     width: 100%;
 }
 .provider-name{
