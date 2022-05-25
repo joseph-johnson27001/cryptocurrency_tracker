@@ -13,6 +13,14 @@ import icon from "../images/Logo.png";
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(false);
 
+  if (setActiveMenu) {
+    document.onclick = function (e) {
+      if (e.target.id !== "menu-button") {
+        setActiveMenu(false);
+      }
+    };
+  }
+
   return (
     <div className="nav-container">
       <div className="logo-container">
@@ -24,7 +32,8 @@ const Navbar = () => {
         </Typography.Title>
         <Button
           className="menu-control-container"
-          onClick={() => setActiveMenu(!activeMenu)}
+          id="menu-button"
+          onClick={() => setActiveMenu(true)}
         >
           <MenuOutlined />
         </Button>
@@ -32,7 +41,6 @@ const Navbar = () => {
           <Menu
             theme="dark"
             style={{ background: "black", zIndex: 1000 }}
-            onClick={() => setActiveMenu(!activeMenu)}
             id="nav-select"
           >
             <Menu.Item
