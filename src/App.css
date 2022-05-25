@@ -276,7 +276,7 @@ a::before {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--border);
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
 }
 
 .link-name{
