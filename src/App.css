@@ -389,11 +389,9 @@ a::before {
 .crypto-card-container{
     min-height: 65vh !important;
 }
-.crypto-card{
-    min-width: 250px;
-}
+
 .crypto-card .crypto-image{
-    width:35px;
+    width: 35px;
 }
 
 .select-timeperiod{
@@ -454,9 +452,6 @@ a::before {
     .coin-detail-container{
         margin: 0;
     }
-    .heading{
-        margin-top: 20px;
-    }  
 }
 
 
