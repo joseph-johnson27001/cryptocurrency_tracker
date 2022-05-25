@@ -201,7 +201,7 @@ a::before {
     border-bottom: 1px solid var(--border);
     font-size: 1rem;
     opacity: 0.9;
-    padding: 20px;
+    padding: 20px 20px 17px 20px;
     align-items: center;
 
 }
