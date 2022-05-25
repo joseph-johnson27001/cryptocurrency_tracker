@@ -327,7 +327,7 @@ a::before {
 }
 .provider-container{
     position: absolute !important;
-    bottom: 10;
+    bottom: 10px !important;
     display: flex !important;
     justify-content: space-between !important;
     align-items: center !important;
@@ -358,7 +358,6 @@ a::before {
     display: flex !important;
     gap: 20px !important;
     margin-top: 15px;
-    align-items: right !important;
     flex-wrap: wrap !important;
     justify-content: right;
     width: 100%;
