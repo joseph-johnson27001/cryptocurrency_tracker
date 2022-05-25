@@ -47,6 +47,7 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
         backgroundColor: "#0071bd",
         borderColor: "#0071bd",
         radius: 1.1,
+        spanGaps: true,
       },
     ],
   };
