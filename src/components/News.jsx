@@ -52,7 +52,9 @@ const News = ({ simplified }) => {
               <a href={news.url} target="_blank" rel="noreferrer">
                 <div className="news-image-container">
                   <Title className="news-title" level={4}>
-                    {`${news.name.substring(0, 80)}...`}
+                    {news.name.length > 80
+                      ? `${news.name.substring(0, 80)}...`
+                      : news.name}
                   </Title>
                   <img
                     src={news?.image?.thumbnail?.contentUrl || demoImage}
