@@ -6,7 +6,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 import App from "./App.js";
 import store from "./app/store";
-import "antd/dist/antd.css";
+import "antd/dist/antd.min.css";
 
 ReactDOM.render(
   <Router>
