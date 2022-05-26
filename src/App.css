@@ -142,7 +142,7 @@ a::before {
 }
 
 .global-crypto-container {
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
 }
 
