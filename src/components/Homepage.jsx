@@ -68,7 +68,7 @@ const Homepage = () => {
         </Title>
       </div>
       <Cryptocurrencies simplified />
-      <div className="home-heading-container">
+      {/* <div className="home-heading-container">
         <Title level={2} className="home-title">
           Latest Crypto News
         </Title>
@@ -76,7 +76,7 @@ const Homepage = () => {
           <Link to="/news">Show More</Link>
         </Title>
       </div>
-      <News simplified />
+      <News simplified /> */}
     </>
   );
 };

@@ -57,13 +57,13 @@ const Navbar = () => {
             >
               <Link to="/cryptocurrencies">Cryptocurrencies</Link>
             </Menu.Item>
-            <Menu.Item
+            {/* <Menu.Item
               icon={<BulbOutlined />}
               key="news"
               style={{ background: "black" }}
             >
               <Link to="/news">News</Link>
-            </Menu.Item>
+            </Menu.Item> */}
           </Menu>
         )}
       </div>
