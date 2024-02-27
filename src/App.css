@@ -85,7 +85,7 @@ a::before {
 .logo-container{
     background-color: var(--text-primary);
     display: flex;
-    padding: 5px 10px;
+    padding: 5px 0px;
     align-items: center;
     justify-content: space-between;
     width: 90%;
@@ -94,8 +94,13 @@ a::before {
     position: relative;
 }
 
+.logo-container img {
+    object-fit: contain !important;
+}
+
 .logo-container h2 {
     margin-bottom: 5px !important;
+    margin-left: 0px !important;
 }
 
 .logo{
