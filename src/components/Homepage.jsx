@@ -8,6 +8,18 @@ import { Cryptocurrencies, News } from "../components";
 
 const { Title } = Typography;
 
+// Helper function to handle extremely large values as was previously breaking site
+const formatValue = (value) => {
+  if (value > 1e12) {
+    return `${(value / 1e12).toFixed(2)} Trillion`; 
+  } else if (value > 1e9) {
+    return `${(value / 1e9).toFixed(2)} Billion`;
+  } else if (value > 1e6) {
+    return `${(value / 1e6).toFixed(2)} Million`; 
+  }
+  return millify(value);
+};
+
 const Homepage = () => {
   const { data, isFetching } = useGetCryptosQuery(10);
 
@@ -32,28 +44,28 @@ const Homepage = () => {
           <Col>
             <Statistic
               title="Total Exchanges"
-              value={millify(globalStats.totalExchanges)}
+              value={formatValue(globalStats.totalExchanges)}
               span={12}
             />
           </Col>
           <Col>
             <Statistic
               title="Total Market Cap"
-              value={millify(globalStats.totalMarketCap)}
+              value={formatValue(globalStats.totalMarketCap)}
               span={12}
             />
           </Col>
           <Col>
             <Statistic
               title="Total 24h Volume"
-              value={millify(globalStats.total24hVolume)}
+              value={formatValue(globalStats.total24hVolume)}
               span={12}
             />
           </Col>
           <Col>
             <Statistic
               title="Total Markets"
-              value={millify(globalStats.totalMarkets)}
+              value={formatValue(globalStats.totalMarkets)}
               span={12}
             />
           </Col>
